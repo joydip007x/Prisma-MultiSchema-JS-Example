@@ -1,0 +1,23 @@
+// Show  ❤ & Support : https://github.com/joydip007x/prisma-unify007x.git 
+// Ignore " Error validating datasource `db`: You defined more than one datasource. " 
+// Generated in Fri May 19 2023 19:20:03 GMT+0600 (Bangladesh Standard Time)
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("PRISMA_DATABASE_URL")
+}
+type Moods {
+    happy String?
+    sad  Int?
+}
+
+model User {
+
+    id String @id @default(auto()) @map("_id") @db.ObjectId
+    email String @unique
+    mood Moods
+    
+}
