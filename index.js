@@ -4,8 +4,6 @@ import dotenv from 'dotenv'
 
 const prisma = new PrismaClient();
 
-
-
 dotenv.config();
 
 const app = express()
@@ -17,44 +15,22 @@ app.get('/', async (req, res) => {
 app.post('/user', async (req, res) => {
     const { email, mood } = req.body
     const post = await prisma.User.create({
-      data: {
-         email:email,
-         mood:mood
-      },
+      data: {  email:email, mood:mood,  },
     })
     res.json(post)
-  })
-
+})
 app.get('/user', async (req, res) => {
-   
-    const post = await prisma.User.findMany({
-
-    })
+    const post = await prisma.User.findMany({})
     res.json(post)
-  })
+})
+app.get('/bookmark', async(req,res)=>{
+   const bookmarks= await prisma.bookmarks.findMany();
+   res.json(bookmarks);
+})
 
   const port= process.env.PORT;
-
   console.log('PORT = ',port);
   app.listen(port,()=>console.log("Listen to `$port`"))
 
-
-  /* Prisma AutoComplete or Intellisense fix
-   -https://stackoverflow.com/questions/72102079/single-instance-prisma-client-autocomplete-not-working */
-
-
-/*   SECONDARY WAY 
-import Db from './prisma/prisma-client-js.js'
-const dataBase = new Db();
-
-app.post('/user', async (req, res) => {
-    const { email, mood } = req.body
-    const post = await database.User.create({
-      data: {
-         email:email,
-         mood:mood
-      },
-    })
-    res.json(post)
-  })
-*/
+/* Prisma AutoComplete or Intellisense fix
+-https://stackoverflow.com/questions/72102079/single-instance-prisma-client-autocomplete-not-working */
