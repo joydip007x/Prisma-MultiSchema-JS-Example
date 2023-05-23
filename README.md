@@ -13,7 +13,8 @@ To Test :
     create & deploy a database 
 - Copy the database's connection string, Replace it in `.ENV`
 - Run `npm install` to install dependencies
-- Execute `npx prisma-multischema` , check `/prisma` folder for newly generated Schema.
+- 🎯Execute `npx prisma-multischema` , this will Unify all schema  ,
+- check `/prisma/shcema.prisma`  for newly generated Schema.
 
 - Sharing Postman-API, with working example : [Postman Shared API ](https://documenter.getpostman.com/view/15393845/2s93m4X2he)
 - Start with `npx nodemon index.js`
