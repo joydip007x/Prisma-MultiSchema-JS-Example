@@ -1,6 +1,6 @@
 // Show  ❤ & Support : https://github.com/joydip007x/prisma-unify007x.git 
 // Ignore " Error validating datasource `db`: You defined more than one datasource. " 
-// Generated in Sun May 21 2023 02:20:02 GMT+0600 (Bangladesh Standard Time)
+// Generated in Tue May 23 2023 12:35:23 GMT+0600 (Bangladesh Standard Time)
 generator client {
   provider = "prisma-client-js"
 }
@@ -10,21 +10,13 @@ datasource db {
   url      = env("PRISMA_DATABASE_URL")
 }
 
-model Bookmarks {
-  id     String @id @default(auto()) @map("_id") @db.ObjectId
-  name   String
-  user   User   @relation(fields: [userId], references: [id])
-  userId String @db.ObjectId
-}
-
 type Moods {
   happy String?
   sad   Int?
 }
 
 model User {
-  id        String      @id @default(auto()) @map("_id") @db.ObjectId
-  email     String      @unique
-  mood      Moods
-  Bookmarks Bookmarks[]
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  email String @unique
+  mood  Moods
 }
