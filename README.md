@@ -1,7 +1,11 @@
 
-# Prisma MultiSchema : JavaScript -Example
+# Prisma MultiSchema: JavaScript-Demo
 
-This repo demonstrates working example of the npm package `prisma-multischema`
+
+This repo demonstrates working example of the npm package 
+- Repo : [prisma-multischema](https://github.com/joydip007x/Prisma-MultiSchema) 
+<br/>
+- Package : [npm](https://www.npmjs.com/package/prisma-multischema)
 
 To Test :
 
@@ -9,12 +13,11 @@ To Test :
   ```
   git clone https://github.com/joydip007x/Prisma-MultiSchema-JS-Example.git
   ```
-- Go to [MongoDB](https://cloud.mongodb.com/), 
-    create & deploy a database 
-- Copy the database's connection string, Replace it in `.ENV`
+- SET database's connection string in `.ENV`
 - Run `npm install` to install dependencies
-- 🎯Execute `npx prisma-multischema` , this will Unify all schema  ,
-- check `/prisma/shcema.prisma`  for newly generated Schema.
-
-- Sharing Postman-API, with working example : [Postman Shared API ](https://documenter.getpostman.com/view/15393845/2s93m4X2he)
+- 🎯Execute `npx prisma-multischema` 
 - Start with `npx nodemon index.js`
+
+
+# API
+- [Postman Shared API ](https://documenter.getpostman.com/view/15393845/2s93m4X2he)
