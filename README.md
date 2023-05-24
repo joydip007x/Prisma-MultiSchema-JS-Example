@@ -4,10 +4,9 @@
 
 This repo demonstrates working example of the npm package 
 - Repo : [prisma-multischema](https://github.com/joydip007x/Prisma-MultiSchema) 
-<br/>
 - Package : [npm](https://www.npmjs.com/package/prisma-multischema)
 
-To Test :
+# Run
 
  - Clone this repo
   ```
