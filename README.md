@@ -18,5 +18,7 @@ This repo demonstrates working example of the npm package
 - Start with `npx nodemon index.js`
 
 
+# Video  ✅[YT Link](https://youtu.be/4GOuJLvGVko)
+
 # API
 - [Postman Shared API ](https://documenter.getpostman.com/view/15393845/2s93m4X2he)
