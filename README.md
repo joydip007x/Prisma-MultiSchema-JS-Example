@@ -13,7 +13,8 @@ This repo demonstrates working example of the npm package
   git clone https://github.com/joydip007x/Prisma-MultiSchema-JS-Example.git
   ```
 - SET database's connection string in `.ENV`
-- Run `npm install` to install dependencies
+- Run `npm install` to install dependencies 
+- Run `npm install prisma-multischema` to install Updated version
 - 🎯Execute `npx prisma-multischema` 
 - Start with `npx nodemon index.js`
 
